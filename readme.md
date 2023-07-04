@@ -17,8 +17,5 @@ The selected problem for implementation is the Sieve of Eratosthenes for the ran
 ## How to run
 
 - make sure you have Cuda version 12+ installed
-- install requirements.txt
-```bash
-conda create --name primes --file requirements.txt
-```
-- run meassure.sh
+- install requirements
+- run measure.sh
