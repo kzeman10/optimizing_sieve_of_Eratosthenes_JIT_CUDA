@@ -14,6 +14,12 @@ The selected problem for implementation is the Sieve of Eratosthenes for the ran
 - Python implementation utilizing CUDA through CuPy.
 - C implementation with and without O3 optimization.
 
+## Results
+All CPU implementations were tested on a laptop AMD Ryzen 7 5800H CPU, while CuPy implementation was tested on a laptop Nvidia RTX 3070 / Max-Q GPU.
+
+![Results](./data/results.svg)
+
+
 ## How to run
 
 - make sure you have Cuda version 12+ installed
