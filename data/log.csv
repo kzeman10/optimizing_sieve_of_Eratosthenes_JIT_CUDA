@@ -1,0 +1,7 @@
+implementation,time
+pure Python,300
+Python Numba,53.9
+Python NumPy,38
+C,60.2
+C with O3,38.8
+Python CuPy,2.3
