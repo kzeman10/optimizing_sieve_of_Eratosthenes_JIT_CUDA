@@ -11,7 +11,7 @@ The selected problem for implementation is the Sieve of Eratosthenes for the ran
 - Naive Python implementation using a list.
 - Python implementation with just-in-time (JIT) compilation by Numba.
 - Python implementation utilizing a NumPy array.
-- Python implementation utilizing CUDA through CuPy.
+- Python implementation utilizing CUDA through CuPy naive and slightly optimized.
 - C implementation with and without O3 optimization.
 
 ## Results

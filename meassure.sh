@@ -11,9 +11,15 @@ echo "GPU: $gpu_info"
 echo
 
 
+echo "results:"
+# Run optimized cupy implementation
+# warmup run
+python sieve_cupy_optimized.py > /dev/null
+cupy_optimized_time=$( { time python sieve_cupy_optimized.py 2>&1; } 2>&1 | grep real | awk '{print $2}' )
+echo "Sieve Cupy Optimized: ${cupy_optimized_time}"
+
 # Run cupy implementation
 # warmup run
-echo "results:"
 python sieve_cupy.py > /dev/null
 cupy_time=$( { time python sieve_cupy.py 2>&1; } 2>&1 | grep real | awk '{print $2}' )
 echo "Sieve Cupy: ${cupy_time}"

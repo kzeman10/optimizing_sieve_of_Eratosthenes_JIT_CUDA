@@ -27,11 +27,11 @@ def sieve_cp(n):
 
     # loop over primes and mark composite numbers
     for p in primes_small:
-            primes[p * p: n : p] = False
+        primes[p * p: n : p] = False
 
     # Count the prime numbers
     prime_count = cp.sum(primes)
     return prime_count
 
 
-print(sieve_cp(2**30))
+print(sieve_cp(2**32))

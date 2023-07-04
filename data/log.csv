@@ -5,3 +5,4 @@ Python NumPy,38
 C,60.2
 C with O3,38.8
 Python CuPy,2.3
+Python CuPy optimized,1.6
