@@ -6,13 +6,13 @@ The goal of this project is to explore opportunities for overcoming this tradeof
 
 ## Selected problem
 
-The selected problem for implementation is the Sieve of Eratosthenes for the range of all unsigned 32-bit integers. The solution will include several implementations for comparison, including:
+The selected problem for implementation is the Sieve of Eratosthenes in the range of all unsigned 32-bit integers. The solution will include several implementations for comparison, including:
 
 - Naive Python implementation using a list.
 - Python implementation with just-in-time (JIT) compilation by Numba.
 - Python implementation utilizing a NumPy array.
-- Python implementation utilizing CUDA through CuPy naive and slightly optimized.
-- C implementation with and without O3 optimization.
+- Python implementation utilizing CUDA through CuPy - naive and slightly optimized version.
+- C implementation with and without o3 optimization.
 
 ## Results
 All CPU implementations were tested on a laptop AMD Ryzen 7 5800H CPU, while CuPy implementation was tested on a laptop Nvidia RTX 3070 / Max-Q GPU.
