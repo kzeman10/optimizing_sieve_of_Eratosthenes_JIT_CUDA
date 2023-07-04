@@ -16,4 +16,4 @@ def sieve(n):
     prime_count = np.sum(primes)
     return prime_count
 
-print(sieve(10**9))
+print(sieve(2**32))

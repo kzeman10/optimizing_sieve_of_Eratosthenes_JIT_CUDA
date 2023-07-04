@@ -17,4 +17,4 @@ def sieve(n):
     return prime_count
 
 
-print(sieve(10**9))
+print(sieve(2**32))
