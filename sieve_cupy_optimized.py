@@ -1,9 +1,10 @@
+"""GPU optimized implementation of the sieve of Eratosthenes using CUPY and NumPy"""
 import numpy as np
 import cupy as cp
 
 
 def sieve_np(n):
-    """Optimized implementation of the sieve of Eratosthenes using NumPy arrays"""
+    """Implementation of the sieve of Eratosthenes utilizing NumPy arrays"""
     # prepare array of primes with first two positions as False
     primes = np.ones(n, dtype=np.bool_)
     primes[:2] = False
@@ -19,7 +20,7 @@ def sieve_np(n):
 
 
 def sieve_cp(n):
-    """Optimized implementation of the sieve of Eratosthenes using CUPY"""
+    """Optimized implementation of the sieve of Eratosthenes using CuPy"""
     # prepare array of primes with first two positions as False
     primes = cp.ones(n, dtype=cp.bool_)
     primes[:2] = False

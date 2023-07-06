@@ -1,8 +1,8 @@
-"""This pure Python naive implementation of sieve of Erathostenes uses list of booleans and two nested loops to solve the selected problem"""
+"""Naive pure-Python implementation of the sieve of Erathostenes using a list"""
 
 
 def sieve(n):
-    """naive Python impleentation for sieve of Erathostenes"""
+    """Naive pure-Python implementation of the sieve of Erathostenes using a list"""
     # prepare list of primes with first two positions as False
     primes = [False if i < 2 else True for i in range(n)]
 

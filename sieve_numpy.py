@@ -1,8 +1,9 @@
+"""Implementation of the sieve of Eratosthenes utilizing NumPy arrays"""
 import numpy as np
 
 
 def sieve(n):
-    """Optimized implementation of the sieve of Eratosthenes using NumPy arrays"""
+    """Implementation of the sieve of Eratosthenes utilizing NumPy arrays"""
     # prepare array of primes with first two positions as False
     primes = np.ones(n, dtype=np.bool_)
     primes[:2] = False

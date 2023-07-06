@@ -1,9 +1,10 @@
+"""JIT-compiled implementation of the sieve of Eratosthenes by Numba"""
 import numba as nb
 
 
 @nb.njit()
 def sieve(n):
-    """Optimized implementation of the sieve of Eratosthenes using Numba"""
+    """JIT-compiled implementation of the sieve of Eratosthenes by Numba"""
     # prepare list of primes with first two positions as False
     primes = [False if i < 2 else True for i in range(n)]
 

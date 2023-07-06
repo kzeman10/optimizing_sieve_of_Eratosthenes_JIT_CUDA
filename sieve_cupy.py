@@ -1,8 +1,9 @@
+"""GPU accelerated implementation of the sieve of Eratosthenes using CuPy"""
 import cupy as cp
 
 
 def sieve(n):
-    """Optimized implementation of the sieve of Eratosthenes using CUPY"""
+    """GPU accelerated implementation of the sieve of Eratosthenes using CuPy"""
     # prepare array of primes with first two positions as False
     primes = cp.ones(n, dtype=cp.bool_)
     primes[:2] = False
